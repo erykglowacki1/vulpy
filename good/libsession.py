@@ -55,5 +55,5 @@ def load(request):
 
 
 def destroy(response):
-    response.set_cookie('vulpy_session', '', expires=0)
+    response.set_cookie('vulpy_session', '', expires=0, max_age=0, path='/')
     return response

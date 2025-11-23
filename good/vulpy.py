@@ -48,6 +48,12 @@ def before_request():
 def add_csp_headers(response):
     if csp:
         response.headers['Content-Security-Policy'] = csp
+
+    #stop caching of authenticated pages
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    
     return response
 
 app.run(debug=True, host='127.0.0.1', port=5002, extra_files='csp.txt')

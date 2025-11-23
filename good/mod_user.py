@@ -101,3 +101,13 @@ def do_chpasswd_post():
     return redirect('/')
     flash("Password changed")
 
+@mod_user.route('/logout', methods=['GET'])
+def do_logout():
+
+    session.pop('username', None)
+    
+    response = make_response(redirect('/user/login'))
+    response = libsession.destroy(response)
+
+    flash("Logged out successfully")
+    return response
