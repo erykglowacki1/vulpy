@@ -25,6 +25,8 @@ def login(username, password, **kwargs):
     if not user:
         #print('The user doesnt exists')
         return False
+    if is_locked(username):
+        return False
 
     backend = default_backend()
 
@@ -58,7 +60,7 @@ def user_create(username, password=None):
     conn.set_trace_callback(print)
     conn.row_factory = sqlite3.Row
     c = conn.cursor()
-    c.execute("INSERT INTO users (username, password, salt, failures, mfa_enabled, mfa_secret,locked_until) VALUES (?, ?, ?,?, ?, ?,?)" ,("", '', '', 0, 0, '',''))
+    c.execute("INSERT INTO users (username, password, salt, failures, mfa_enabled, mfa_secret,locked_until) VALUES (?, ?, ?, ?, ?, ?, ?)" ,(username, '', '', 0, 0, 0,0))
     conn.commit()
 
     if password:
