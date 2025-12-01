@@ -1,7 +1,11 @@
 from cryptography.fernet import Fernet
 import geoip2.database
 
-key = 'JHtM1wEt1I1J9N_Evjwqr3yYauXIqSxYzFnRhcf0ZG0='
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+key = os.getenv('SESSION_KEY')
 fernet = Fernet(key)
 ttl = 7200  # seconds
 reader = geoip2.database.Reader('GeoLite2-Country.mmdb')
