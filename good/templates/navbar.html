@@ -8,6 +8,9 @@
     {% if g.session.username %}
     <a href="/user/chpasswd" class="w3-bar-item w3-button w3-padding-large">CHPASSWD</a>
     <a href="/mfa" class="w3-bar-item w3-button w3-padding-large">MFA</a>
+    {% if g.session.username == 'admin' %}
+    <a href="/user/logs" class="w3-bar-item w3-button w3-padding-large">LOGS</a>
+    {% endif %}
     <a href="/user/logout" class="w3-bar-item w3-button w3-padding-large">LOGOUT</a>
     {% else %}
     <a href="/user/login" class="w3-bar-item w3-button w3-padding-large">LOGIN</a>
