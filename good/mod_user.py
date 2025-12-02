@@ -5,6 +5,7 @@ from flask import Blueprint, render_template, redirect, request, g, session, mak
 import libuser
 import libsession
 import libmfa
+import audit
 
 mod_user = Blueprint('mod_user', __name__, template_folder='templates')
 
@@ -20,12 +21,14 @@ def do_login():
         password = request.form.get('password')
         otp = request.form.get('otp')
         if libuser.is_locked(username_input):
+            audit.logEvent("Login_Locked", username_input, request.remote_addr, "Account is locked due to too many failed attempts")
             flash("Account is locked due to too many attempts. Try again later.")
             return render_template('user.login.mfa.html')
 
         username = libuser.login(username_input, password)
 
         if not username:
+            audit.logEvent("Login_Failed", username_input, request.remote_addr, "Invalid username or password")
             libuser.increment_failed_attempts(username_input)
 
             if libuser.get_failed_attempts(username_input) >= libuser.MAX_FAILED_ATTEMPTS:
@@ -41,8 +44,11 @@ def do_login():
 
         if libmfa.mfa_is_enabled(username):
             if not libmfa.mfa_validate(username, otp):
-                flash("Invalid OTP");
+                audit.logEvent("Login_MFA_Failed", username, request.remote_addr, "Invalid OTP")
+                flash("Invalid OTP")
                 return render_template('user.login.mfa.html')
+            
+        audit.logEvent("Login_Success", username, request.remote_addr, "Successful authentication")
 
         response = make_response(redirect('/'))
         response = libsession.create(request=request, response=response, username=username)
@@ -98,6 +104,42 @@ def do_chpasswd_post():
         return render_template('user.chpasswd.html')
 
     libuser.password_set(g.session['username'], new_password)
-    return redirect('/')
+    audit.logEvent("Password_Change", g.session['username'], request.remote_addr, "Password changed successfully")
+    
     flash("Password changed")
+    return redirect('/')
 
+@mod_user.route('/logout', methods=['GET'])
+def do_logout():
+
+    if 'username' in g.session:
+        audit.logEvent("Logout", g.session['username'], request.remote_addr, "User logged out")
+
+    session.pop('username', None)
+    
+    response = make_response(redirect('/user/login'))
+    response = libsession.destroy(response)
+
+    flash("Logged out successfully")
+    return response
+
+@mod_user.route('/logs', methods=['GET'])
+def view_logs():
+    
+    if 'username' not in g.session:
+        flash("You must be logged in to view logs")
+        return redirect('/user/login')
+    if g.session['username'] != 'admin':
+        flash("You do not have permission to view logs")
+        return redirect('/')
+
+    try:
+        with open('logs/audit.log', 'r') as f:
+            logs = f.readlines()
+        logs = logs[-100:]
+        logs.reverse()
+        logs = ''.join(logs)
+    except FileNotFoundError:
+        logs = ["No logs found."]
+
+    return render_template('logs.html', logs=logs)
