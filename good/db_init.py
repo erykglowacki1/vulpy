@@ -14,7 +14,7 @@ def db_init_users():
 
     conn = sqlite3.connect('db_users.sqlite')
     c = conn.cursor()
-    c.execute("CREATE TABLE users (username text, password text, salt text, failures int, mfa_enabled int, mfa_secret text)")
+    c.execute("CREATE TABLE users (username text, password text, salt text, failures int, mfa_enabled int, mfa_secret text,locked_until INTEGER DEFAULT 0)")
     conn.commit()
     conn.close()
 

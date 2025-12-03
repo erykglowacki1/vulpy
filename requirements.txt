@@ -7,3 +7,5 @@ PyJWT
 pyotp
 qrcode
 requests
+nh3
+python-dotenv
