@@ -13,6 +13,8 @@ Installation
    activate venv
 
    pip3 install  -r requirements.txt
+   
+   ./vulpy.py
 
 
 Features
