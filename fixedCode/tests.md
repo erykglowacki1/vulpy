@@ -23,6 +23,7 @@ HACKED! Your account has been compromised! Send $1000 to recover it! </div>
 6. Baseline - Vulnerable: Red warning displays across entire screen
 7. Hardened - Secure: HTML tags stripped, only plain text displayed
 
+
 Test Case 6 - Hardcoded Secrets
 Test Methodology:
 1. Run Snyk scan on baseline repository:
