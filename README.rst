@@ -1,28 +1,3 @@
-Vulpy - Web Application Security Lab
-====================================
-
-Vulpy is a web application developed in Python / Flask / SQLite that has two faces.
-
-**GOOD**: Tries to code with secure development best practices in mind.
-
-**BAD**: Tries to code like (possibly) you. :p
-
-Is developed has a laboratory for the following courses:
-
-Secure Development of Securetia (https://www.securetia.com/cursos.html)
-Secure Development of EducaciónIT (https://www.educacionit.com/curso-de-desarrollo-seguro)
-
-But you can use it has you want (MIT License)
-
-
-OWASP Application Security Verification Standard
-------------------------------------------------
-
-The "GOOD" version (not finished yet) will comply with the OWASP ASVS:
-
-https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project
-
-This will permit learn how to develop python code following the best security practices.
 
 
 
@@ -31,11 +6,13 @@ Installation
 
 ::
 
-   git clone https://github.com/fportantier/vulpy
+   git clone https://github.com/erykglowacki1/vulpy.git
 
    cd vulpy
+   
+   activate venv
 
-   pip3 install --user -r requirements.txt
+   pip3 install  -r requirements.txt
 
 
 Features
@@ -49,21 +26,6 @@ Features
 - Content Security Policy
 - SSL/TLS Server
 
-
-Vulnerabilities
----------------
-
-Some of the vulnerabilities present on the "BAD" version:
-
-- Cross-Site Scripting (XSS)
-- SQL Injection
-- Cross Site Request Forgery (CSRF)
-- Session Impersonation
-- Insecure Deserialization
-- Authentication Bruteforce
-- Authentication Bypass
-
-**Note:** The "GOOD" version (not finished yet) is supposed to don't have vulnerabilities, but I'm a human being, so...
 
 
 Database Initialization
