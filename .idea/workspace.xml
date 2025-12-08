@@ -1,15 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="722dd3c5-7853-4e0f-add4-f4e51c510230" name="Changes" comment="" />
+    <list default="true" id="722dd3c5-7853-4e0f-add4-f4e51c510230" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vulpy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vulpy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/api_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/api_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/brute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/csp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/db_init.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/libapi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/libmfa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/libposts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/libsession.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/libuser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/mod_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/mod_csp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/mod_hello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/mod_mfa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/mod_posts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/mod_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/payloads/cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/payloads/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/payloads/keylogger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/payloads/payload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/static/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/static/background.xcf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/static/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/static/w3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/csp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/mfa.disable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/mfa.enable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/posts.view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/user.chpasswd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/user.create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/user.login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/user.login.mfa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/templates/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/vulpy-ssl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/bad/vulpy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/good/libsession.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselineCode/vulpy/good/libsession.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/good/mod_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselineCode/vulpy/good/mod_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baselineCode/vulpy/good/vulpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselineCode/vulpy/good/vulpy.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="35l5TXOBSw1o56idSgEyfA3cOFl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -18,19 +72,56 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.libsession.executor": "Run",
+    "Python.mod_user.executor": "Run",
+    "Python.vulpy.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/eryk/Desktop/Year 4 College/BiometricsProject/vulpy",
+    "last_opened_file_path": "/Users/eryk/Desktop/Year 4 College/AppsecProjectReal/vulpy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="vulpy" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="vulpy" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 virtualenv at ~/Desktop/Year 4 College/BiometricsProject/vulpy/venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fixedCode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fixedCode/vulpy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.515" />
-        <option value="bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>
@@ -42,7 +133,24 @@
       <option name="presentableId" value="Default" />
       <updated>1763671825904</updated>
       <workItem from="1763671827619" duration="1000" />
+      <workItem from="1764783772900" duration="7680000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/vulpy$mod_user.coverage" NAME="mod_user Coverage Results" MODIFIED="1765204931214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselineCode/vulpy/good" />
+    <SUITE FILE_PATH="coverage/vulpy$vulpy.coverage" NAME="vulpy Coverage Results" MODIFIED="1765207727693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fixedCode" />
+    <SUITE FILE_PATH="coverage/vulpy$libsession.coverage" NAME="libsession Coverage Results" MODIFIED="1765206769447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baselineCode/vulpy/good" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
