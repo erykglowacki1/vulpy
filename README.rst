@@ -9,8 +9,12 @@ Installation
    git clone https://github.com/erykglowacki1/vulpy.git
 
    cd vulpy
+
+
    
    activate venv
+
+    Depending on which version you are running,  use ./init.db in whatever folder you selected
 
    pip3 install  -r requirements.txt
    
